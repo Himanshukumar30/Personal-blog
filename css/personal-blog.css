@@ -10,8 +10,24 @@ DDF0D1 : Nyanza
 
 
 /* Global styles------------- */
+.wrapper{
+  display:grid;
+  grid-template-rows: 30px,10px,10px,50px,50px,50px,10px;
+  grid-template-columns: 50px, 200px;
+  grid-template-areas: "hd hd hd hd hd hd hd hd"
+  "sidebar sidebar social social social social social social"
+  "sidebar sidebar navbar navbar navbar navbar navbar navbar"
+  "sidebar sidebar recentposts recentposts recentposts recentposts recentposts recentposts"
+  "sidebar sidebar projects projects projects projects projects projects"
+  "sidebar sidebar portfolio portfolio portfolio portfolio portfolio portfolio"
+  "footer footer footer footer footer footer footer footer";
+
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
 html {
   box-sizing: border-box;
+  margin: 1%;
 }
 *, *:before, *:after {
   box-sizing: inherit;
@@ -26,17 +42,19 @@ font-size: 15px;
 line-height: 1.5;
 }
 a {
-	color:  #FEFAE0;
+	color:  #938A99;
 }
 h1{
-	font-size:  50px;
+  background-color: #F2E6FA;
+  padding: 40%;
+	font-size:  52px;
 	line-height: 1;
-    padding: 1.5%;
+  padding: 1.5%;
 
 }
 h2{
 	font-size: 45px;
-
+  background-color: #DEDEDE;
 }
 h1,h2{
 	/* font-family: 'Caveat', cursive; */
@@ -44,25 +62,36 @@ h1,h2{
 	margin: 0;
 }
 
-.content-wrap{
-	max-width:  800px;
-	width:  85%;
-	margin: 0 auto;
-	padding: 60px 0;
-}
 h3 {
 	margin-bottom: 0;
 }
 
+/* Header--------------------- */
+.header-content{
+  grid-area:hd;
+}
 /* Nav bar------------------- */
 .navbar{
-    display: flexbox;
+    /* display: flexbox;
     flex-direction: column;
-    color: white;
+    text-decoration: none;
+    color: white; */
+    grid-area: navbar;
     background-color: #938A99;
     font-size: 29px;
     padding: 9px;
 }
+
+.navbar a{
+  /* display: flexbox;
+  flex-direction: column;*/
+  text-decoration: none;
+  color: #FEFAE0;
+  background-color: #938A99;
+  font-size: 29px;
+  padding: 9px;
+}
+
 .navbar a:hover{
 	text-decoration: none;
     color: #673e82;
@@ -71,24 +100,73 @@ h3 {
 }
 
 .navbar a:active{
-	text-decoration: none;
+	/* text-decoration: none; */
+  color: red;
     background-color: #F2E6FA;
     padding: 10px;
 }
 
-/* Social-------------------- */
+/* Search bar----------------- */
+.searchbar{
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  /* text-justify: center; */
+  padding: 6px 5px;
+  text-decoration: none;
+  font-size: 20px;
+}
 
+/* .searchbar ::selection{
+  text
+  float: right;
+  display: block;
+  color: black;
+  text-rendering: none;
+  text-align: center;
+  /* text-justify: center;
+  padding: 6px 5px;
+  text-decoration: none;
+  font-size: 20px; 
+}*/
+
+/* Social-------------------- */
+.social{
+  grid-area: social;
+  display: flexbox;
+  flex-direction: row-reverse;
+  background-color: #F2E6FA;
+  padding: 10%;
+	font-size:  50px;
+	line-height: 0.1;
+  padding: 1%;
+}
 
 /* Recent posts-------------- */
-
+.recentposts{
+  grid-area: recentposts;
+}
 
 /* My work------------------ */
-
+.projects{
+  grid-area: projects;
+}
 
 /* Portfolio section------- */
-
+.portfolio{
+  grid-area: portfolio;
+}
 
 /* Side bar---------------- */
+.sidebar{
+  grid-area: sidebar;
+  width: 10%;
+}
 
+/* Footer------------------ */
+.footer{
+  grid-area: footer;
+}
 
 /* responsive style------- */

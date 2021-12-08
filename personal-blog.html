@@ -5,31 +5,33 @@
         <title>Personal Blog</title>
         <link rel="stylesheet" href="css/personal-blog.css">
     </head>
-    <body>
+    <body class="wrapper">
         <!--------- Website header ------------->
-        <h1 class="header">I'm Himanshu Kumar | Passionate Front End Web Developer</h1>
+        <h1 class="header-content">I'm Himanshu Kumar | Passionate Front End Web Developer</h1>
         
-        <!--------- Navigation bar ------------->
-        <nav class="navbar">
-            <a href="personal-blog.html">Home</a>
-            <a href="" target="_blank">Blog</a>
-            <a href="portfolio.html" target="_blank">Portfolio</a>
-            <a href="" target="_blank">Contact</a>
-            <input type="text" placeholder="Search..">
-        </nav>
-        
+
         <!----------- Social icons --------------->
-        <div class="social">
+        <div class="social" class="maincontent">
             <a href="https://github.com/Himanshukumar30" target="_blank"><img src="Images/394187_github_icon.png" alt="Github icon" width="30" height="30"></a>
             <a href="https://www.linkedin.com/in/himanshukumar3/" target="_blank"><img src="Images/107178_circle_linkedin_icon.png" alt="linkedin icon" width="30" height="30"></a>
             <a href="https://codepen.io/himanshukumar30" target="_blank"><img src="Images/4550862_demo view_codepen_test_web developer_code_icon.png" alt="codepen icon" width="30" height="30"></a>
             <a href="https://www.behance.net/himanshukumar25" target="_blank"><img src="Images/104426_behance_portfolio_icon.png" alt="behance icon" width="30" height="30"></a>
         </div>
+
+
+        <!--------- Navigation bar ------------->
+        <nav class="navbar" class="maincontent">
+            <a href="personal-blog.html">Home</a>
+            <a href="" target="_blank">Blog</a>
+            <a href="portfolio.html" target="_blank">Portfolio</a>
+            <a href="" target="_blank">Contact</a>
+            <input class= "searchbar" type="text" placeholder="Search..">
+        </nav>
        
         <!----------- Recent posts --------------->
-        <section class="maincontent">
-            <div class="recentposts">
-                <h1>Recent post</h1>
+        <section class="recentposts" class="maincontent">
+            <div>
+                <h2>Recent post</h2>
                 <h3>Sample post</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Integer quis auctor elit sed vulputate mi sit amet. Elit ut aliquam purus sit amet luctus venenatis lectus magna. 
@@ -49,7 +51,7 @@
       
         <!------------- My projects --------------->
         <section class="projects" class="maincontent">
-            <div class="content-wrap divider">
+            <div>
                 <h2>My Work</h2>
                 <p>View selected projects below. More information can be found at <a href="https://himanshubl0g.wordpress.com/" target="_blank">himanshu.blog</a></p>
                 <section class="project-item">
@@ -63,12 +65,12 @@
         </section>
     
         <!------------ Link to portfolio ----------->
-        <section class="maincontent">
-            <div class="portfolio">
-                <h2><button><a href="portfolio.html" target="_blank">View my portfolio
+        <section class="portfolio" class="maincontent">
+            <div>
+                <h3><button><a href="portfolio.html" target="_blank">View my portfolio
                 </a>
                 </button>
-                </h2>
+                </h3>
             </div>
         <!---------- End of Portfolio block --------->
         </section>
@@ -79,8 +81,8 @@
         <!-------------- End of Footer block --------------->
         </footer>
         <!-------------- Sidebar ----------------->
-        <section class="sidebar">
-            <h1>About</h1>
+        <section class="sidebar" style="width:25%">
+            <h2>About</h2>
             <p>Aspiring Frontend Developer with 5+ years of experience in 
                 designing User Interfaces and interactive web designs. I also have extensive knowledge about startups and Agile methodology.
                 </p>
