@@ -5,6 +5,7 @@ DEDEDE : Gainsboro
 F2E6FA : Pale purple panton
 DDF0D1 : Nyanza
 938A99 : Taupe Gray
+0a604f: dark green for portfolio button
 
  */
 
@@ -12,8 +13,8 @@ DDF0D1 : Nyanza
 /* Global styles------------- */
 .wrapper{
   display:grid;
-  grid-template-rows: 30px,10px,10px,50px,50px,50px,10px;
-  grid-template-columns: 50px, 200px;
+  /* grid-template-rows: 50px,50px,500px;
+  grid-template-columns: 200px, 300px; */
   grid-template-areas: "hd hd hd hd hd hd hd hd"
   "sidebar sidebar social social social social social social"
   "sidebar sidebar navbar navbar navbar navbar navbar navbar"
@@ -23,8 +24,8 @@ DDF0D1 : Nyanza
   "footer footer footer footer footer footer footer footer";
 
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
 }
+
 html {
   box-sizing: border-box;
   margin: 1%;
@@ -46,7 +47,6 @@ a {
 }
 h1{
   background-color: #F2E6FA;
-  padding: 40%;
 	font-size:  52px;
 	line-height: 1;
   padding: 1.5%;
@@ -66,16 +66,21 @@ h3 {
 	margin-bottom: 0;
 }
 
+p {
+  font-size: 19px;
+line-height: 1.5;
+padding: 1.5%;
+}
+
 /* Header--------------------- */
 .header-content{
   grid-area:hd;
+  background-image: url(../Images/header-background.jpg);
+  background-size: cover;
+	background-position: top right;
 }
 /* Nav bar------------------- */
 .navbar{
-    /* display: flexbox;
-    flex-direction: column;
-    text-decoration: none;
-    color: white; */
     grid-area: navbar;
     background-color: #938A99;
     font-size: 29px;
@@ -94,16 +99,16 @@ h3 {
 
 .navbar a:hover{
 	text-decoration: none;
-    color: #673e82;
-    background-color: #F2E6FA;
-    padding: 10px;
+  color: #673e82;
+  background-color: #F2E6FA;
+  padding: 10px;
 }
 
 .navbar a:active{
 	/* text-decoration: none; */
   color: red;
-    background-color: #F2E6FA;
-    padding: 10px;
+  background-color: #F2E6FA;
+  padding: 10px;
 }
 
 /* Search bar----------------- */
@@ -118,55 +123,157 @@ h3 {
   font-size: 20px;
 }
 
-/* .searchbar ::selection{
-  text
-  float: right;
-  display: block;
-  color: black;
-  text-rendering: none;
-  text-align: center;
-  /* text-justify: center;
-  padding: 6px 5px;
-  text-decoration: none;
-  font-size: 20px; 
-}*/
-
 /* Social-------------------- */
 .social{
-  grid-area: social;
-  display: flexbox;
-  flex-direction: row-reverse;
+  grid-area: social;  
+  display: block;
+  float: right;
   background-color: #F2E6FA;
-  padding: 10%;
+  padding: 1%;
 	font-size:  50px;
 	line-height: 0.1;
+}
+
+.social a{
+  grid-area: social;  
+  display: block;
+  float: right;
   padding: 1%;
+	font-size:  50px;
+	line-height: 0.1;
+}
+
+.social a:hover {
+ 
+  padding: 1%;
+	font-size:  60px;
+	line-height: 0.1;
 }
 
 /* Recent posts-------------- */
 .recentposts{
   grid-area: recentposts;
+  background-color: #E6FDFF;
+  padding: 1.5%;
+  background-image: url(../Images/recentposts-background.jpg);
+  background-size: cover;
+	background-position: top right;
+}
+
+.recentposts h3, p{
+  background-color: #DEDEDE;
+  padding: 1.5%;
 }
 
 /* My work------------------ */
 .projects{
   grid-area: projects;
+  padding: 1.5%;
+  background-image: url(../Images/projects-background.jpg);
+  background-size: cover;
+	background-position: top right;
+}
+
+.projects a{
+  font-size: 20px;
+  color: #673e82;
+}
+
+.projects a:hover {
+  text-decoration: none;
+  font-size: 20px;
+  color: #673e82;
 }
 
 /* Portfolio section------- */
 .portfolio{
   grid-area: portfolio;
+  padding: 1.5%;
+  height: 200px;
+  justify-content: center;
+  align-content: center;
+  background-image: url(../Images/portfolio-background.jpg);
+  background-size: cover;
+	background-position: top right;
 }
+
+
+.portfolio .button{
+  display: inline-block;
+  justify-items: center;
+  font-size: 20px;
+  padding: 1.5%;
+  border-radius: 15px;
+  color: #FEFAE0;
+  background-color: #0a604f;
+}
+
+.portfolio a{
+  color: #00120B;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.portfolio a :hover{
+  color: #00120B;
+  background-color: rgb(168, 164, 158);
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.portfolio h3{
+  text-align: center;
+  justify-items: center;
+}
+
 
 /* Side bar---------------- */
 .sidebar{
   grid-area: sidebar;
-  width: 10%;
+  width: 190px;
+  background-image: url(Images/sidebar-background.jpg);
+  padding: 1.5%;
+}
+
+.picture{
+  padding: 0.5%;
 }
 
 /* Footer------------------ */
-.footer{
+
+footer{
   grid-area: footer;
+  padding: 1.5%;
+  background-image: url(../Images/footer-background.jpg);
+  background-size: cover;
+	background-position: top right;
+  color: #DEDEDE;
+  text-align: right;
+  font-size: 15px;
+}
+
+.subscribe{
+  display: inline-block;
+  justify-items: center;
+  font-size: 20px;
+  /* padding: 1.5%; */
+  border-radius: 15px;
+  color: #FEFAE0;
+  background-color: #938A99;
+}
+
+.subscribe:hover {
+  display: inline-block;
+  justify-items: center;
+  color: #00120B;
+  background-color: rgb(168, 164, 158);
+  font-size: 22px;
+  /* padding: 1.5%; */
+  border-radius: 15px;
+}
+
+.subscribe-input{
+  font-size: 16px;
 }
 
 /* responsive style------- */
