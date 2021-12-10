@@ -10,7 +10,7 @@
             <h1 class="header-content">I'm Himanshu Kumar | Passionate Front End Web Developer</h1>
             
         <!----------- Social icons --------------->
-        <div class="social" class="maincontent">
+        <div class="social">
             <a href="https://github.com/Himanshukumar30" target="_blank"><img src="Images/394187_github_icon.png" alt="Github icon" width="30" height="30"></a>
             <a href="https://www.linkedin.com/in/himanshukumar3/" target="_blank"><img src="Images/107178_circle_linkedin_icon.png" alt="linkedin icon" width="30" height="30"></a>
             <a href="https://codepen.io/himanshukumar30" target="_blank"><img src="Images/4550862_demo view_codepen_test_web developer_code_icon.png" alt="codepen icon" width="30" height="30"></a>
@@ -19,7 +19,7 @@
 
 
         <!--------- Navigation bar ------------->
-        <nav class="navbar" class="maincontent">
+        <nav class="navbar">
             <a href="personal-blog.html">Home</a>
             <a href="" target="_blank">Blog</a>
             <a href="portfolio.html" target="_blank">Portfolio</a>
@@ -28,28 +28,71 @@
         </nav>
        
         <!----------- Recent posts --------------->
-        <section class="recentposts" class="maincontent">
-            <div>
-                <h2>Recent post</h2>
-                <h3>Sample post</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Integer quis auctor elit sed vulputate mi sit amet. Elit ut aliquam purus sit amet luctus venenatis lectus magna. 
-                Duis at consectetur lorem donec massa sapien faucibus et. Morbi leo urna molestie at elementum. Amet 
-                commodo nulla facilisi nullam vehicula ipsum. Nam libero justo laoreet sit amet. Enim ut tellus elementum sagittis 
-                vitae et leo duis. Risus viverra adipiscing at in tellus integer feugiat scelerisque varius. Sed lectus vestibulum 
-                mattis ullamcorper velit sed ullamcorper morbi tincidunt. Id aliquet lectus proin nibh nisl condimentum. Egestas 
-                egestas fringilla phasellus faucibus scelerisque eleifend donec. Lacus sed viverra tellus in hac. Sed cras ornare 
-                arcu dui vivamus arcu felis. Consectetur a erat nam at lectus urna duis convallis convallis. Felis donec et odio 
-                pellentesque diam volutpat commodo sed egestas. Sit amet commodo nulla facilisi nullam. Orci dapibus ultrices in 
-                iaculis nunc sed augue lacus. Ipsum consequat nisl vel pretium lectus. At lectus urna duis convallis convallis 
-                tellus.
-                </p>
-                <!----------- End of Recent posts block ----------->
+        <section class="recentposts">
+                <h2>Recent posts</h2>
+                <div class="container">
+                    <div class="card">
+                      <div class="card__header">
+                        <img src="Images/technology.jpg" alt="card__image" class="card__image" width="600">
+                      </div>
+                      <div class="card__body">
+                        <span class="tag tag-blue">Technology</span>
+                        <h4>What's new in 2022 Tech</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      </div>
+                      <div class="card__footer">
+                        <div class="user">
+                          <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
+                          <div class="user__info">
+                            <h5>Deb Bolan</h5>
+                            <small>2h ago</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card__header">
+                        <img src="Images/food.jpg" alt="card__image" class="card__image" width="600">
+                      </div>
+                      <div class="card__body">
+                        <span class="tag tag-brown">Food</span>
+                        <h4>Delicious Food</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      </div>
+                      <div class="card__footer">
+                        <div class="user">
+                          <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
+                          <div class="user__info">
+                            <h5>Ian Watt</h5>
+                            <small>Yesterday</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card__header">
+                        <img src="Images/automobile.jpg" alt="card__image" class="card__image" width="600">
+                      </div>
+                      <div class="card__body">
+                        <span class="tag tag-red">Automobile</span>
+                        <h4>Race to your heart content</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
+                      </div>
+                      <div class="card__footer">
+                        <div class="user">
+                          <img src="https://i.pravatar.cc/40?img=3" alt="user__image" class="user__image">
+                          <div class="user__info">
+                            <h5>Chris Dewan</h5>
+                            <small>1d ago</small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
             </div>
         </section>
       
         <!------------- My projects --------------->
-        <section class="projects" class="maincontent">
+        <section class="projects">
             <div>
                 <h2>My Work</h2>
                 <p>View selected projects below. More information can be found at <a href="https://himanshubl0g.wordpress.com/" target="_blank">himanshu.blog</a></p>
@@ -81,7 +124,7 @@
         </footer>
         <!-------------- Sidebar ----------------->
         <section class="sidebar" >
-            <img class="picture" src="Images/Himanshu.jpg" height="210px" width="185px">
+            <img class="picture" src="Images/Himanshu.jpg" height="209px" width="185px">
             <h2>About</h2>
             <p>Aspiring Frontend Developer with 5+ years of experience in 
                 designing User Interfaces and interactive web designs.<br><br>

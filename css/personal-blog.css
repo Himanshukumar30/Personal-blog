@@ -8,7 +8,7 @@ DDF0D1 : Nyanza
 0a604f: dark green for portfolio button
 
  */
-
+ @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 /* Global styles------------- */
 .wrapper{
@@ -38,7 +38,8 @@ body{
 color: #00120B;
 margin:  0;
 padding: 0;
-/* font-family: 'Montserrat', sans-serif; */
+background: linear-gradient(to bottom, #020024, #eeeeee, #00d4ff);
+font-family: "Quicksand", sans-serif;
 font-size: 15px;
 line-height: 1.5;
 }
@@ -57,7 +58,6 @@ h2{
   background-color: #DEDEDE;
 }
 h1,h2{
-	/* font-family: 'Caveat', cursive; */
 	font-weight: 400;
 	margin: 0;
 }
@@ -139,31 +139,124 @@ padding: 1.5%;
   display: block;
   float: right;
   padding: 1%;
-	font-size:  50px;
-	line-height: 0.1;
+	font-size:  100px;
+	line-height: 0;
 }
 
-.social a:hover {
+.social img:hover {
  
   padding: 1%;
-	font-size:  60px;
+	font-size:  100px;
 	line-height: 0.1;
 }
 
 /* Recent posts-------------- */
-.recentposts{
-  grid-area: recentposts;
-  background-color: #E6FDFF;
-  padding: 1.5%;
-  background-image: url(../Images/recentposts-background.jpg);
-  background-size: cover;
-	background-position: top right;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-.recentposts h3, p{
-  background-color: #DEDEDE;
+.recentposts{
+  grid-area: recentposts;
+  /* background-color: #E6FDFF; */
   padding: 1.5%;
+  /* background-image: url(../Images/recentposts-background.jpg); */
+  background-size: cover;
+  background-position: top right;
+  }
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 1070px;
+  margin-block: 2rem;
+  gap: 2rem;
 }
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: clamp(20rem, calc(20rem + 2vw), 22rem);
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+.card__body {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+
+.tag {
+  align-self: flex-start;
+  padding: .25em .75em;
+  border-radius: 1em;
+  font-size: .75rem;
+}
+
+.tag + .tag {
+  margin-left: .5em;
+}
+
+.tag-blue {
+  background: #56CCF2;
+background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
+.tag-brown {
+  background: #D1913C;
+background: linear-gradient(to bottom, #FFD194, #D1913C);
+  color: #fafafa;
+}
+
+.tag-red {
+  background: #cb2d3e;
+background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  color: #fafafa;
+}
+
+.card__body h4 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+
+.card__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: #666;
+}
+
 
 /* My work------------------ */
 .projects{
