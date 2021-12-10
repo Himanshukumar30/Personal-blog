@@ -16,10 +16,11 @@ DDF0D1 : Nyanza
   /* grid-template-rows: 50px,50px,500px;
   grid-template-columns: 200px, 300px; */
   grid-template-areas: "hd hd hd hd hd hd hd hd"
-  "sidebar sidebar social social social social social social"
-  "sidebar sidebar navbar navbar navbar navbar navbar navbar"
+  "social social social social social social social social"
+  "navbar navbar navbar navbar navbar navbar navbar navbar"
   "sidebar sidebar recentposts recentposts recentposts recentposts recentposts recentposts"
   "sidebar sidebar projects projects projects projects projects projects"
+  "sidebar sidebar subscribe subscribe subscribe subscribe subscribe subscribe"
   "sidebar sidebar portfolio portfolio portfolio portfolio portfolio portfolio"
   "footer footer footer footer footer footer footer footer";
 
@@ -88,8 +89,6 @@ padding: 1.5%;
 }
 
 .navbar a{
-  /* display: flexbox;
-  flex-direction: column;*/
   text-decoration: none;
   color: #FEFAE0;
   background-color: #938A99;
@@ -129,7 +128,7 @@ padding: 1.5%;
   display: block;
   float: right;
   background-color: #F2E6FA;
-  padding: 1%;
+  padding: 0.1%;
 	font-size:  50px;
 	line-height: 0.1;
 }
@@ -146,7 +145,7 @@ padding: 1.5%;
 .social img:hover {
  
   padding: 1%;
-	font-size:  100px;
+	font-size:  150px;
 	line-height: 0.1;
 }
 
@@ -278,6 +277,42 @@ background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #673e82;
 }
 
+/* Subscribe form---------- */
+form {
+  grid-area: subscribe;
+  border: 3px solid #f1f1f1;
+  background-color: #f1f1f1;
+  font-family: "Quicksand", sans-serif;
+}
+
+.subscribe {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+input[type=submit] {
+  background-color: #0a604f;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
 /* Portfolio section------- */
 .portfolio{
   grid-area: portfolio;
@@ -343,30 +378,6 @@ footer{
   color: #DEDEDE;
   text-align: right;
   font-size: 15px;
-}
-
-.subscribe{
-  display: inline-block;
-  justify-items: center;
-  font-size: 20px;
-  /* padding: 1.5%; */
-  border-radius: 15px;
-  color: #FEFAE0;
-  background-color: #938A99;
-}
-
-.subscribe:hover {
-  display: inline-block;
-  justify-items: center;
-  color: #00120B;
-  background-color: rgb(168, 164, 158);
-  font-size: 22px;
-  /* padding: 1.5%; */
-  border-radius: 15px;
-}
-
-.subscribe-input{
-  font-size: 16px;
 }
 
 /* responsive style------- */
