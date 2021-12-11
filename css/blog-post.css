@@ -1,64 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-
-/* Global styles------------- */
-.wrapper{
-  display:grid;
-  /* grid-template-rows: 50px,50px,500px;
-  grid-template-columns: 200px, 300px; */
-  grid-template-areas: "hd hd hd hd hd hd hd hd"
-  "social social social social social social social social"
-  "navbar navbar navbar navbar navbar navbar navbar navbar" 
-  "post post post post post post post post"
-  "footer footer footer footer footer footer footer footer";
-
-  gap: 10px;
-}
-
-html {
-  box-sizing: border-box;
-  margin: 1%;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-} /* Box model fix */
-
-body{
-color: #00120B;
-margin:  0;
-padding: 0;
-background: linear-gradient(to bottom, #020024, #eeeeee, #00d4ff);
-font-family: "Quicksand", sans-serif;
-font-size: 15px;
-line-height: 1.5;
-}
-a {
-	color:  #938A99;
-}
-h1{
-  background-color: #F2E6FA;
-	font-size:  52px;
-	line-height: 1;
-  padding: 1.5%;
-
-}
-h2{
-	font-size: 45px;
-  background-color: #DEDEDE;
-}
-h1,h2{
-	font-weight: 400;
-	margin: 0;
-}
-
-h3 {
-	margin-bottom: 0;
-}
-
-p {
-  font-size: 19px;
-line-height: 1.5;
-padding: 1.5%;
-}
+@import url(global-style.css);
+@import url(navbar.css);
 
 /* Header--------------------- */
 .header-content{
@@ -66,37 +8,6 @@ padding: 1.5%;
   background-image: url(../Images/header-background.jpg);
   background-size: cover;
 	background-position: top right;
-}
-/* Nav bar------------------- */
-.navbar{
-    grid-area: navbar;
-    background-color: #938A99;
-    font-size: 29px;
-    padding: 9px;
-}
-
-.navbar a{
-  /* display: flexbox;
-  flex-direction: column;*/
-  text-decoration: none;
-  color: #FEFAE0;
-  background-color: #938A99;
-  font-size: 29px;
-  padding: 9px;
-}
-
-.navbar a:hover{
-	text-decoration: none;
-  color: #673e82;
-  background-color: #F2E6FA;
-  padding: 10px;
-}
-
-.navbar a:active{
-	/* text-decoration: none; */
-  color: red;
-  background-color: #F2E6FA;
-  padding: 10px;
 }
 
 /* Search bar----------------- */
