@@ -139,6 +139,16 @@ padding: 1.5%;
 }
 
 /* Post--------------------- */
+
+.tag-blue {
+  padding: .70em;
+  border-radius: 1em;
+  font-size: .80rem;
+  background: #56CCF2;
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  color: #fafafa;
+}
+
 .post{
   grid-area: post;
   /* text-align: center; */
@@ -154,27 +164,9 @@ padding: 1.5%;
   text-align: right;
   background-color: #DEDEDE;
   padding: 0.2%;
+  font-size: 0.50em;
 }
 
-.card__footer {
-  display: flex;
-  /* padding: 1rem; */
-  margin-top: auto;
-}
-
-.user {
-  display: flex;
-  gap: .5rem;
-  height: 30px;
-}
-
-.user__image {
-  border-radius: 50%;
-}
-
-.user__info > small {
-  color: rgb(179, 179, 179);
-}
 
 /* Quote----------------- */
 blockquote {
@@ -195,6 +187,57 @@ blockquote p::after {
   content: '\201D';
 }
 
+/* Author Information------- */
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  width: 1070px;
+  margin-block: 2rem;
+  gap: 2rem;
+}
+
+.container a{
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  background: #ECE9E6;
+background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+
+}
+
+.post__footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.author {
+  display: flex;
+  gap: .5rem;
+}
+
+.author__image {
+  height: 15em;
+}
+
+.user__info > small {
+  color: #666;
+}
 
 
 /* Footer------------------ */
