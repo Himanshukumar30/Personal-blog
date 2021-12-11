@@ -177,6 +177,11 @@ padding: 1.5%;
   gap: 2rem;
 }
 
+.container a{
+  text-decoration: none;
+  color: black;
+}
+
 img {
   max-width: 100%;
   display: block;

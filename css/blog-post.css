@@ -138,8 +138,64 @@ padding: 1.5%;
 	line-height: 0.1;
 }
 
+/* Post--------------------- */
+.post{
+  grid-area: post;
+  /* text-align: center; */
+  background-color: white;
+}
 
-/* Footer -----------------*/
+.center{
+  text-align: center;
+}
+
+.date{
+  color: rgba(70, 68, 68, 0.493);
+  text-align: right;
+  background-color: #DEDEDE;
+  padding: 0.2%;
+}
+
+.card__footer {
+  display: flex;
+  /* padding: 1rem; */
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: .5rem;
+  height: 30px;
+}
+
+.user__image {
+  border-radius: 50%;
+}
+
+.user__info > small {
+  color: rgb(179, 179, 179);
+}
+
+/* Quote----------------- */
+blockquote {
+  margin: 0;
+}
+
+blockquote p {
+  padding: 15px;
+  background: #eee;
+  border-radius: 5px;
+}
+
+blockquote p::before {
+  content: '\201C';
+}
+
+blockquote p::after {
+  content: '\201D';
+}
+
+
 
 /* Footer------------------ */
 
