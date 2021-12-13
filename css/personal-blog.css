@@ -14,19 +14,19 @@ DDF0D1 : Nyanza
 @import url(navbar.css);
 
 /* Header--------------------- */
-.header-content{
-  grid-area:hd;
+header{
   background-image: url(../Images/header-background.jpg);
-  background-size: cover;
-	background-position: top right;
+  width: 330px;
+  /* background-size: cover;
+	background-position: top right; */
 }
 
 /* Search bar----------------- */
 .searchbar{
+  display: flex;
   float: right;
   display: block;
   color: black;
-  text-align: center;
   padding: 6px 5px;
   font-size: 20px;
 }
@@ -40,6 +40,7 @@ DDF0D1 : Nyanza
   padding: 0.1%;
 	font-size:  50px;
 	line-height: 0.1;
+  width: 330px;
 }
 
 .social a{
@@ -51,17 +52,11 @@ DDF0D1 : Nyanza
 	line-height: 0;
 }
 
-.social img:hover {
- 
-  padding: 1%;
-	font-size:  150px;
-	line-height: 0.1;
-}
-
 /* My work------------------ */
 .projects{
   grid-area: projects;
   padding: 1.5%;
+  width: 330px;
   /* background-image: url(../Images/projects-background.jpg); */
   background-color: whitesmoke;
   background-size: cover;
@@ -73,17 +68,12 @@ DDF0D1 : Nyanza
   color: #673e82;
 }
 
-.projects a:hover {
-  text-decoration: none;
-  font-size: 20px;
-  color: #673e82;
-}
-
 /* Subscribe form---------- */
 form {
   grid-area: subscribe;
   border: 3px solid #f1f1f1;
   background-color: #f1f1f1;
+  width: 330px;
   font-family: "Quicksand", sans-serif;
 }
 
@@ -111,14 +101,11 @@ input[type=submit] {
   border: none;
 }
 
-input[type=submit]:hover {
-  opacity: 0.8;
-}
-
 /* Portfolio section------- */
 .portfolio{
   grid-area: portfolio;
   padding: 1.5%;
+  width: 330px;
   height: 200px;
   justify-content: center;
   align-content: center;
@@ -126,7 +113,6 @@ input[type=submit]:hover {
   background-size: cover;
 	background-position: top right;
 }
-
 
 .portfolio .button{
   display: inline-block;
@@ -144,13 +130,6 @@ input[type=submit]:hover {
   text-decoration: none;
 }
 
-.portfolio a :hover{
-  color: #00120B;
-  background-color: rgb(168, 164, 158);
-  font-size: 22px;
-  text-decoration: none;
-}
-
 .portfolio h3{
   text-align: center;
   justify-items: center;
@@ -160,13 +139,16 @@ input[type=submit]:hover {
 /* Side bar---------------- */
 .sidebar{
   grid-area: sidebar;
-  width: 190px;
-  background-image: url(Images/sidebar-background.jpg);
+  background-color: #DEDEDE;
+  width: 330px;
   padding: 1.5%;
 }
 
-.picture{
-  padding: 0.5%;
+.sidebar img{
+  align-content: center;
+  width: 330px;
+  padding: 1.5%;
+  height: 300px;
 }
 
 /* Footer------------------ */
@@ -174,15 +156,206 @@ input[type=submit]:hover {
 footer{
   grid-area: footer;
   padding: 1.5%;
+  width: 330px;
   background-image: url(../Images/footer-background.jpg);
+  background-color: #00120B;
   background-size: cover;
-	background-position: top right;
+	/*background-position: top right; */
   color: #DEDEDE;
-  text-align: right;
+  background-size: cover;
+  text-align: center;
   font-size: 15px;
 }
 
 /* responsive style------- */
-@media screen {
+
+/* Large screens */
+@media screen and (min-width:1000px) {
+  .wrapper{
+    display:grid;
+    /* grid-template-rows: 50px,50px,500px;
+    grid-template-columns: 200px, 350px; */
+    grid-template-areas: "hd hd hd hd hd hd hd hd hd"
+    "social social social social social social social social social"
+    "navbar navbar navbar navbar navbar navbar navbar navbar navbar"
+    "sidebar sidebar sidebar recentposts recentposts recentposts recentposts recentposts recentposts"
+    "sidebar sidebar sidebar projects projects projects projects projects projects"
+    "sidebar sidebar sidebar subscribe subscribe subscribe subscribe subscribe subscribe"
+    "sidebar sidebar sidebar portfolio portfolio portfolio portfolio portfolio portfolio"
+    "footer footer footer footer footer footer footer footer footer";
   
+    gap: 10px;
+  
+  }
+  header{
+    background-image: url(../Images/header-background.jpg);
+    width: 970px;
+    /* background-size: cover;
+    background-position: top right; */
+  }
+  h1{
+    font-size: 57px;
+    line-height: 1;
+  }
+  h2{
+    background-color: #DEDEDE;
+    font-size: 45px;
+  }
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 970px;
+    margin-block: 2rem;
+    gap: 2rem;
+  }
+
+  .recentposts{
+    width: 970px;
+    text-align: center;
+  }
+ 
+  .navbar a:hover{
+    text-decoration: none;
+    color: #673e82;
+    background-color: #F2E6FA;
+    padding: 10px;
+  }
+  .navbar{
+    grid-area: navbar;
+    background-color: #938A99;
+    font-size: 29px;
+    padding: 9px;
+    width: 1280px;
+  }
+
+  .navbar a{
+    text-decoration: none;
+    color: #FEFAE0;
+    background-color: #938A99;
+    font-size: 29px;
+    padding: 9px;
+  }
+
+  .navbar a:active{
+    color: red;
+    background-color: #F2E6FA;
+    padding: 10px;
+  }
+  .social img:hover {
+  
+    padding: 1%;
+    font-size:  150px;
+    line-height: 0.1;
+  }
+  .social{
+    grid-area: social;  
+    display: block;
+    float: right;
+    background-color: #F2E6FA;
+    padding: 0.1%;
+    font-size:  50px;
+    width: 1280                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             px;
+    line-height: 0.1;
+  }
+
+  .social a{
+    grid-area: social;  
+    display: block;
+    float: right;
+    padding: 1%;
+    font-size:  100px;
+    line-height: 0;
+  }
+  .searchbar{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    /* text-justify: center; */
+    padding: 6px 5px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .projects {
+    background: #F5F5F5;
+    width: 970px;
+  }
+  .projects .button {
+    color: #F5F5F5;
+    background: #00120B;
+    padding: 8px;
+    border-radius: 4px;
+    display:  inline-block;
+  }
+  .projects .button:hover{
+  
+    background: rgba(0, 18, 11, 70%);
+  }
+  .project-item {
+    overflow: hidden;
+  }
+  .project-item h3 {
+    margin-top: 0;
+  }
+  .project-item img {
+		float:  left;
+		margin-right: 5px;
+	}
+  form {
+    grid-area: subscribe;
+    width: 970px;
+  }
+  
+  input[type=submit] {
+    background-color: #0a604f;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+  }
+  .portfolio a :hover{
+    color: #00120B;
+    background-color: rgb(168, 164, 158);
+    font-size: 22px;
+    text-decoration: none;
+  }
+  .portfolio{
+    width:970px;
+  }
+  .sidebar{
+    grid-area: sidebar;
+    width: 230px;
+    padding: 1.5%;
+  }
+  
+  .sidebar img{
+    padding: 1.5%;
+    height: 300px;
+  }
+  footer{
+    width: 1280px;
+  }
+}
+
+/* Medium screen*/
+@media screen and (min-width:600px) and (max-width:1000px) {
+  .wrapper{
+    display:grid;
+    /* grid-template-rows: 50px,50px,500px;
+    grid-template-columns: 200px, 350px; */
+    grid-template-areas: "hd hd hd hd hd hd hd hd"
+    "social social social social social social social social"
+    "navbar navbar navbar navbar navbar navbar navbar navbar"
+    "sidebar sidebar recentposts recentposts recentposts recentposts recentposts recentposts"
+    "sidebar sidebar projects projects projects projects projects projects"
+    "sidebar sidebar subscribe subscribe subscribe subscribe subscribe subscribe"
+    "sidebar sidebar portfolio portfolio portfolio portfolio portfolio portfolio"
+    "footer footer footer footer footer footer footer footer";
+  
+    gap: 10px;
+  }
 }

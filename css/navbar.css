@@ -1,9 +1,12 @@
 /* Nav bar------------------- */
 .navbar{
     grid-area: navbar;
+    display: flex;
     background-color: #938A99;
     font-size: 29px;
     padding: 9px;
+    width: 330px;
+    flex-wrap: wrap;
 }
 
 .navbar a{
@@ -14,16 +17,8 @@
   padding: 9px;
 }
 
-.navbar a:hover{
-	text-decoration: none;
-  color: #673e82;
-  background-color: #F2E6FA;
-  padding: 10px;
-}
-
 .navbar a:active{
-	/* text-decoration: none; */
-  color: red;
+  color: #673e82;
   background-color: #F2E6FA;
   padding: 10px;
 }
