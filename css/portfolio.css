@@ -15,16 +15,16 @@ html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 } /* Box model fix */
 
 body{
-color: #00120B;
-margin:  0;
-padding: 0;
-font-family: 'Montserrat', sans-serif;
-font-size: 15px;
-line-height: 1.5;
+	color: #00120B;
+	margin:  0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	line-height: 1.5;
 }
 img{
 width: 300px;
@@ -78,6 +78,14 @@ header {
 	background-color: #96ADC8;
 }
 
+header button{
+	display: inline-block;
+	padding: 1.5%;
+	border-radius: 7px;
+	font-size: 15px;
+	text-align: right;
+	background-size: 100px;
+}
 
 
 /*Projects

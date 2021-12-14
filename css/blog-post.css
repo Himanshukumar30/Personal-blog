@@ -9,6 +9,7 @@
   "social social social social social social social social"
   "navbar navbar navbar navbar navbar navbar navbar navbar" 
   "post post post post post post post post"
+  "share share share share share share share share"
   "footer footer footer footer footer footer footer footer";
 
   gap: 10px;
@@ -23,13 +24,13 @@ html {
 } /* Box model fix */
 
 body{
-color: #00120B;
-margin:  0;
-padding: 0;
-background: linear-gradient(to bottom, #020024, #eeeeee, #00d4ff);
-font-family: "Quicksand", sans-serif;
-font-size: 15px;
-line-height: 1.5;
+  color: #00120B;
+  margin:  0;
+  padding: 0;
+  background: linear-gradient(to bottom, #020024, #eeeeee, #00d4ff);
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 a {
 	color:  #938A99;
@@ -56,8 +57,8 @@ h3 {
 
 p {
   font-size: 19px;
-line-height: 1.5;
-padding: 1.5%;
+  line-height: 1.5;
+  padding: 1.5%;
 }
 
 /* Header--------------------- */
@@ -69,10 +70,9 @@ padding: 1.5%;
 }
 /* Nav bar------------------- */
 .navbar{
-    grid-area: navbar;
-    background-color: #938A99;
-    font-size: 29px;
-    padding: 9px;
+  grid-area: navbar;
+  background-color: #938A99;
+  font-size: 29px;
 }
 
 .navbar a{
@@ -82,21 +82,18 @@ padding: 1.5%;
   color: #FEFAE0;
   background-color: #938A99;
   font-size: 29px;
-  padding: 9px;
 }
 
 .navbar a:hover{
 	text-decoration: none;
   color: #673e82;
   background-color: #F2E6FA;
-  padding: 10px;
 }
 
 .navbar a:active{
 	/* text-decoration: none; */
   color: red;
   background-color: #F2E6FA;
-  padding: 10px;
 }
 
 /* Search bar----------------- */
@@ -114,8 +111,6 @@ padding: 1.5%;
 /* Social-------------------- */
 .social{
   grid-area: social;  
-  display: block;
-  float: right;
   background-color: #F2E6FA;
   padding: 0%;
 	font-size:  50px;
@@ -132,7 +127,6 @@ padding: 1.5%;
 }
 
 .social img:hover {
- 
   padding: 1%;
 	font-size:  100px;
 	line-height: 0.1;
@@ -216,7 +210,7 @@ img {
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 }
 
@@ -239,16 +233,40 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
   color: #666;
 }
 
+/* References-------------- */
+button{
+  padding: 10px;
+  border-radius: 9%;
+  font-size: 17px;
+}
+
+/* Social sharing */
+.social-sharing{
+  grid-area: share;  
+  display: flex;
+  flex-direction: row-reverse;
+  background-color:honeydew;
+  padding: 3%;
+  font-size:  50px;
+  line-height: 0.1;
+  padding: 1.5%;
+}
+
+.social-sharing img:hover {
+  padding: 1%;
+	font-size:  100px;
+	line-height: 0;
+}
 
 /* Footer------------------ */
 
 footer{
-    grid-area: footer;
-    padding: 1.5%;
-    background-image: url(../Images/footer-background.jpg);
-    background-size: cover;
-      background-position: top right;
-    color: #DEDEDE;
-    text-align: right;
-    font-size: 15px;
-  }
+  grid-area: footer;
+  padding: 1.5%;
+  background-image: url(../Images/footer-background.jpg);
+  background-size: cover;
+  background-position: top right;
+  color: #DEDEDE;
+  text-align: right;
+  font-size: 15px;
+}

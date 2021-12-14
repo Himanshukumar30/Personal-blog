@@ -14,7 +14,7 @@
   padding: 1.5%;
   width: 384px;
   background-position: top right;
-  }
+}
 
 .container {
   display: flex;
@@ -44,8 +44,7 @@ img {
   box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
   border-radius: 1em;
   background: #ECE9E6;
-background: linear-gradient(to right, #FFFFFF, #ECE9E6);
-
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 }
 
 .card__body {
@@ -68,19 +67,19 @@ background: linear-gradient(to right, #FFFFFF, #ECE9E6);
 
 .tag-blue {
   background: #56CCF2;
-background: linear-gradient(to bottom, #2F80ED, #56CCF2);
+  background: linear-gradient(to bottom, #2F80ED, #56CCF2);
   color: #fafafa;
 }
 
 .tag-brown {
   background: #D1913C;
-background: linear-gradient(to bottom, #FFD194, #D1913C);
+  background: linear-gradient(to bottom, #FFD194, #D1913C);
   color: #fafafa;
 }
 
 .tag-red {
   background: #cb2d3e;
-background: linear-gradient(to bottom, #ef473a, #cb2d3e);
+  background: linear-gradient(to bottom, #ef473a, #cb2d3e);
   color: #fafafa;
 }
 
