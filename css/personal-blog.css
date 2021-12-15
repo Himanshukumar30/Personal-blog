@@ -219,8 +219,8 @@ footer{
   }
   header{
     background-image: url(../Images/header-background.jpg);
-    width: 1260px;
-    background-size: 1260px;
+    width: 1320px;
+    background-size: 1320px;
   }
   h1{
     font-size: 57px;
@@ -230,19 +230,19 @@ footer{
   }
   .container {
     flex-wrap: nowrap;
-    width: 970px;
+    width: 1000px;
     gap: 2rem;
   }
 
   .recentposts{
-    width: 1030px;
+    width: 1100px;
     text-align: center;
   }
 
   .navbar{
     grid-area: navbar;
     background-color: #938A99;
-    width: 1260px;
+    width: 1320px;
     font-size: 29px;
     padding: 0;
 }
@@ -266,11 +266,11 @@ footer{
     
   }
   .social{
-    width: 1260px;
+    width: 1320px;
   }
   
   .projects {
-    width: 1010px;
+    width: 1080px;
   }
   .projects .button:hover{
     background: rgba(0, 18, 11, 70%);
@@ -278,7 +278,7 @@ footer{
   
   form {
     grid-area: subscribe;
-    width: 1010px;
+    width: 1080px;
   }
   
   input[type=submit]:hover {
@@ -291,7 +291,7 @@ footer{
     text-decoration: none;
   }
   .portfolio{
-    width: 1010px;
+    width: 1080px;
   }
   .sidebar{
     grid-area: sidebar;
@@ -304,7 +304,7 @@ footer{
     height: 300px;
   }
   footer{
-    width: 1266px;
+    width: 1320px;
   }
 }
 
@@ -372,7 +372,7 @@ footer{
   }
   
   .recentposts{
-    width: 680px;
+    width: 670px;
     text-align: center;
   }
 
