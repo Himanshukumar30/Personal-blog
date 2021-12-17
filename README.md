@@ -18,6 +18,10 @@ Below are the video and screenshots of the personal blog, blog post page and por
 
 
 
+https://user-images.githubusercontent.com/87880250/146466523-f3332d2d-7d0a-4ff2-ba94-cdf034c151e4.mp4
+
+
+
 
 **Screens for Personal blog**
 
